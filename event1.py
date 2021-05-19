@@ -1,3 +1,24 @@
+#### Create Event Class
+ 
+ 
+class Event:
+    eventname = ''
+    eventcode = ''
+    eventTotalAvaibleSeat = 10
+ 
+    def createEvent(self):
+        self.eventname= input("Enter Event Name: ")
+        self.eventcode = input("Enter Event Code: ")
+        self.eventTotalAvaibleSeat = input("Enter Event Total Availble Seats: ")
+        print("\n\n ------> Event Created!")
+        
+        # Create Event Module
+ 
+def createEvent():
+    event = Event()
+    event.createEvent()
+    saveEventDetails(event)
+
 check = ''
 num = 0
 while check != 8:
